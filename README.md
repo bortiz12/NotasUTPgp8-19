@@ -1,4 +1,4 @@
 # NotasUTP
 Html, boostrap , flask
 <br> <hr>
-Para clonar
+Para clonar https://github.com/bortiz12/NotasUTP.git
