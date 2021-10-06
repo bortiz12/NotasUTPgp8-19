@@ -10,12 +10,12 @@
 {% endblock %}
 
 {% block body %}
-
+<div class="container">
 <div class="row justify-content-center pt-5 mt-5 m-1">
   <div class="col-md-6 col-sm-8 col-xl-4 col-lg-5 formulario">
       <form action="">
           <div class="form-group text-center pt-3">
-            <img src="//media.utp.edu.co/img/optimized/marca_UTP.png" alt="Escudo Universidad Tecnologica de Pereira" width="170" height="47">
+            <img src="{{url_for('static',filename='img/marca_UTPblack.png')}}" alt="Escudo Universidad Tecnologica de Pereira" width="170" height="47">
           </div>
           <div class="form-group mx-sm-4 pt-3">
               <input type="text" class="form-control" placeholder="Ingrese su Usuario">
@@ -40,7 +40,7 @@
       </form>
   </div>
 </div>
-
+</div>
 {% endblock %}
 {% block scripts %}
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

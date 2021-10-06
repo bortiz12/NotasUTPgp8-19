@@ -6,6 +6,10 @@ app=Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route("/home")
+def home():
+    return render_template('home.html')
+
 
 def pagina_no_encontrada(error):
     return redirect(url_for('index'))
