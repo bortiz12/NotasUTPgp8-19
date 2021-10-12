@@ -10,12 +10,10 @@ def index():
 def home():
     return render_template('home.html')
 
-
-def pagina_no_encontrada(error):
+@app.errorhandler(404)
+def pagina_no_encontrada(e):
     return redirect(url_for('index'))
     
-
 if __name__ == '__main__':
-    app.register_error_handler(404, pagina_no_encontrada)
     app.run(debug=True,port=5000)
     
