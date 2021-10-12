@@ -13,16 +13,19 @@
 {% block body %}
 <div class="container">
 <div class="row justify-content-center pt-5 mt-5 m-1">
-  <div class="col-md-6 col-sm-8 col-xl-4 col-lg-5 formulario">
+  <div class="col-md-6 col-sm-8 col-xl-4 col-lg-5 formulario needs-validation">
       <form action="">
           <div class="form-group text-center mb-3 pt-3">
             <img src="{{url_for('static',filename='img/marca_UTPblack.png')}}" alt="Escudo Universidad Tecnologica de Pereira" width="170" height="47">
           </div>
           <div class="form-group mx-sm-4 pt-3 mb-3">
-              <input type="text" class="form-control" placeholder="Ingrese su Usuario">
+              <input type="email" class="form-control" placeholder="Ingrese su Email" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
           </div>
           <div class="form-group mx-sm-4 pb-3 mb-3">
-              <input type="text" class="form-control" placeholder="Ingrese su Contraseña">
+              <input type="password" class="form-control" placeholder="Ingrese su Contraseña" required>
           </div>
           
           <div class="form-group mx-sm-4 pb-3">

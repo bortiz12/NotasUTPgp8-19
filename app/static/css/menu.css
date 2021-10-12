@@ -1,3 +1,28 @@
 span{
     color: white;
 }
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-weight: 700!important;
+    font-family: 'Assistant', sans-serif;
+}
+.boton{
+    
+    color: white;
+    width: 5rem;
+    height: 40px;
+    margin-right: .2rem;
+    margin-bottom: 0.2rem;
+    
+}
+.espacio{ 
+    margin-left: -25px;
+   
+    
+}
+.form-select{
+    height: 50%;
+}
