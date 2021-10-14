@@ -14,6 +14,10 @@ def home():
 def Gestionusu():
     return render_template('Gestionusu.html')
 
+@app.route('/Asignaturas')
+def Asignaturas():
+    return render_template('Asignaturas.html')
+
 @app.errorhandler(404)
 def pagina_no_encontrada(e):
     return redirect(url_for('index'))

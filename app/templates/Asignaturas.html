@@ -1,0 +1,53 @@
+{% extends './layaout2.html' %}
+
+{% block title %} Asignaturas{# afuera de esta etiqueta Nombre de la pagina #}{% endblock %} 
+
+{% block pagina %}
+<header class="text-center pt-3"  > <h1>Asignaturas</h1></header> 
+
+<div class="bm-3 pt-3">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand">Buscar</a>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+    </nav>
+    <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nombre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Calculo I</td>
+
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Programacion I</td>
+          </tr>
+          <tr>
+            <th scope="row">1098712311</th>
+            <td> Redes II</td>
+          </tr>
+        </tbody>
+     </table>
+</div>
+<div class="d-grid gap-2 d-md-block bm-3 pt-4">
+    <div class="container-fluid espacio">
+        
+        <button class="btn btn-success boton" type="button">Nuevo</button>
+        <button class="btn btn-warning boton" type="button">Editar</button>
+        <button class="btn btn-danger boton" type="button">Eliminar</button>
+        
+    </div>
+</div>
+
+
+{% endblock %}
