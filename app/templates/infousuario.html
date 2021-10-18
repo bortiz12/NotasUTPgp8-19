@@ -1,0 +1,85 @@
+{% extends './layaout2.html' %}
+
+{% block title %} infoUsuario {% endblock %}
+
+{% block pagina %}
+
+    <header class="text-center pt-3"><h1>Datos personales</h1></header>
+
+    <div class="container p-5">
+
+        <div class="row">
+            <div class="col-sm-4 ">
+                <div class="text-center">
+                    <img src="{{ url_for('static',filename='img/fotoPerfil.jpeg') }}" alt="perfil" width="100%"
+                         height="100%">
+                </div>
+                <div class="text-center p-3">
+                    <button type="button" class="btn btn-success">Cargar Imagen</button>
+
+                </div>
+
+            </div>
+            <div class="col-sm-8">
+                <form class="row g-3">
+
+                    <div class="col-md-6">
+                        <label for="inputName" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Nombre" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputApellido" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="inputApellido" placeholder="Apellidos" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputCed" class="form-label">Cedula</label>
+                        <input type="number" class="form-control" id="inputCed" placeholder="Numero de documento"
+                               onblur="Pasarvalores();" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="example@hotmail.com"
+                               required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputUser" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="inputUser">
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <label for="inputAddress" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                               placeholder="Direccion de recidencia">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputdate" class="form-label">Fecha Nacimiento</label>
+                        <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                            <input class="form-control" size="16" type="text" placeholder="12-02-2012"> <span
+                                class="add-on"><i class="icon-th"></i></span></div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <label for="inputCel" class="form-label">Celular</label>
+                        <input type="number" class="form-control" id="inputCel" placeholder="example  3142856298">
+                    </div>
+
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary">Editar</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+{% endblock %}
