@@ -10,6 +10,15 @@ def index():
 def home():
     return render_template('home.html')
 
+@app.route("/visualizarNotas")
+def visualizarNotas():
+    return render_template('visualizarNotas.html')
+
+@app.route("/infousuario")
+def infousuario():
+    return render_template('infousuario.html')
+
+
 @app.route("/Gestionusu")
 def Gestionusu():
     return render_template('Gestionusu.html')
