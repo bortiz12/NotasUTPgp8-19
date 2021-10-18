@@ -1,0 +1,58 @@
+
+
+{% extends './layaout2.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block pagina %}
+
+    <header class="text-center pt-3"  > <h1>Visualización de Notas</h1></header>
+
+    <div class="container mt-3 p-3">
+
+         <div class="dropdown">
+             <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Seleccionar materia
+             </button>
+             <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Materia 1</a></li>
+                <li><a class="dropdown-item" href="#">Materia 2</a></li>
+                <li><a class="dropdown-item" href="#">Materia 3</a></li>
+             </ul>
+         </div>
+    </div>
+
+
+    <div class="text-center p-3">
+        <table class="table table-responsive">
+        <thead>
+          <tr class="table-primary">
+            <th scope="col">Actividad</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Fecha de Cierre</th>
+            <th scope="col">Nota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sprint 1</td>
+            <td>Entregado</td>
+            <td>27/09/2021</td>
+            <td>5.0</td>
+          </tr>
+          <tr>
+            <td>Sprint 2</td>
+            <td>Pendiente</td>
+            <td>O3/10/2021</td>
+            <td>0.0</td>
+          </tr>
+        </tbody>
+     </table>
+
+    </div>
+
+
+{% endblock %}
+
+
+
